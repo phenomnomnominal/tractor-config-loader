@@ -42,7 +42,7 @@
     "mocha": "3.0.2",
     "npm-watch": "0.1.8",
     "sinon": "1.17.7",
-    "sinon-chai": "2.8.0"
+    "sinon-chai": "2.9.0"
   },
   "dependencies": {
     "lodash.defaults": "4.2.0",
