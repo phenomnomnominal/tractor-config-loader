@@ -110,18 +110,6 @@ describe('tractor-config-loader:', () => {
             tractorLogger.info.restore();
         });
 
-        it('should load default directory paths from the default config', () => {
-            sinon.stub(tractorLogger, 'info');
-
-            let config = loadConfig();
-
-            expect(config.features.directory).to.equal('./tractor/features');
-            expect(config.pageObjects.directory).to.equal('./tractor/page-objects');
-            expect(config.stepDefinitions.directory).to.equal('./tractor/step-definitions');
-
-            tractorLogger.info.restore();
-        });
-
         it('should make the empty tag the first tag', () => {
             process.argv.push('--config');
             process.argv.push('./assets/test.tags.conf.js');
